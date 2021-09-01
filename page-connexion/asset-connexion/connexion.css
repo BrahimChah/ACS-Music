@@ -1,0 +1,62 @@
+/*feuille de style p.2 Connexion ACS Music*/
+:root {
+  --yellow: #FFDD00;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  background-image: url(images-connexion/mur.jpg);
+  background-size: 300%;
+  position: relative;
+}
+
+img {
+  border-radius: 100%;
+  width: 50%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+
+form {
+  background-color: var(--white);
+  width: 90%;
+  z-index: 1;
+  position: absolute;
+  padding: 100px 0 200px 0;
+  margin-top: 100px;
+  margin-left: 18px;
+  box-shadow: 0 0 16px --yellow;
+}
+
+form p {
+  margin-left: 50px;
+  margin-bottom: 0;
+}
+
+form input {
+  padding: 10px 50px;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+}
+
+#email {
+  margin-bottom: 70px;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: var(--black);
+  padding: 7px 40px;
+  border-radius: 20px;
+  color: var(--white);
+  font-size: 1.5em;
+  box-shadow: 0 0 16px var(--yellow);
+}/*# sourceMappingURL=connexion.css.map */
