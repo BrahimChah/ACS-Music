@@ -3,14 +3,18 @@
     --yellow: #FFDD00;
     --white: #ffffff;
     --black: #000000;
+    --yellow-light: #F8CF0B;
+    --yellow-dark: #F27C19;
 }
 body{
     font-family: 'Assistant', sans-serif;
-    background-image: url(images-connexion/mur.jpg);
-    background-size: 300%;
-    position: relative;
+    background: linear-gradient(var(--yellow-light), var(--yellow-dark));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
 }
-img{
+
+.signin{
     border-radius: 100%;
     width: 50%;
     display: block;
@@ -19,40 +23,80 @@ img{
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
+    margin-top: 25px;
 }
 form{
     background-color: var(--white);
     width:90%;
-    z-index: 1;
-    position: absolute;
-    padding: 100px 0 200px 0;
-    margin-top: 100px;
+    z-index: 3;
+    position: relative;
+    padding: 150px 0 50px 0;
+    margin-top: 150px;
     margin-left: 18px;
-    box-shadow: 0 0 16px --yellow;
+    box-shadow: 0 0 20px var(--yellow);
+}
+.geotop{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.geobot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
 }
 form p{
     margin-left: 50px;
     margin-bottom: 0;
+    font-size: 1.3em;
 }
 form input{
     padding: 10px 50px;
-    border-radius: 20px;
+    border-radius: 15px;
     display: block;
     margin: auto;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
 }
 #email{
+    margin-bottom: 70px;
+}
+#password{
     margin-bottom: 70px;
 }
 .btn{
     text-decoration: none;
     background-color: var(--black);
-    padding: 7px 40px;
-    border-radius: 20px;
+    padding: 10px 60px;
+    border-radius: 50px;
     color: var(--white);
     font-size: 1.5em;
-    box-shadow: 0 0 16px var(--yellow);
-    
-
+    margin-left: 80px;
+    margin-top: 20px;
+    transition: box-shadow 500ms;
+}
+.btn:hover{
+    transition: box-shadow 500ms;
+    box-shadow: 0 0 20px var(--yellow);
 }
 
+.forget{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    position: absolute;
+    bottom: 26%;
+    left: 15%;
+    
+}
+.account{
+    text-decoration: none;
+    position: relative;
+    left: 95px;
+    bottom: -15px;
+    color: var(--black);
+}

@@ -1,45 +1,78 @@
-/*Feuille de style Sass Mobile firt page d'inscription ACS Music*/
- /*les couleurs variables*/ 
+/*feuille de style p.3 Insricption ACS Music*/
 :root{
-    --black:#000000;
-    --white:#ffffff;
-    --yellow:#ffda09;
+    --yellow: #FFDD00;
+    --white: #ffffff;
+    --black: #000000;
+    --yellow-light: #F8CF0B;
+    --yellow-dark: #F27C19;
 }
 body{
-    //penser à la police d'écriture
-    margin-top: 50%;
+    font-family: 'Assistant', sans-serif;
+    background-image: url(../asset-inscription/images-inscription/mur.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
 }
-.text-center{
-    text-align: center;
-}
-.container{
-    width: 80%;
-    margin: auto;    
-}
-.container p{
-    padding-left: 18px;
-    margin-bottom: 0;
-}
-.input{
-    width: 85%;
-    border-color: grey; //variable
-    border-style: solid;
-    border-width: 1px;
-    display: block;
-    margin: auto ;
-    padding: 2%;
-    border-radius: 5px;
-}
-.btn{
-    display: block;
-    margin: 10% auto;
-    padding: 5px 15px;
-    background-color: var(--yellow);
-    border-style: none;
-}
-a{    
-    text-decoration: none;
-    color: gray;
+.signup{
+    border-radius: 100%;
+    width: 50%;
     display: block;
     margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+    margin-top: 25px;
+}
+form{
+    background-color: var(--white);
+    width:90%;
+    z-index: 3;
+    position: relative;
+    padding: 150px 0 120px 0;
+    margin-top: 112px;
+    margin-left: 18px;
+    box-shadow: 0 0 20px var(--yellow);
+}
+form p{
+    margin-left: 50px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+form input{
+    padding: 10px 50px;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+    border-width: 1px;
+    border-color: grey;
+    border-style: solid;
+}
+#password {
+    margin-bottom: 55px;
+}
+.btn{
+    text-decoration: none;
+    background-color: var(--black);
+    padding: 7px 50px;
+    border-radius: 50px;
+    color: var(--white);
+    font-size: 1.3em;
+    margin-left: 80px;
+    margin-top: 20px;
+    transition: box-shadow 500ms;
+}
+
+.btn:hover{
+    transition: box-shadow 500ms;
+    box-shadow: 0 0 20px var(--yellow-light);
+}
+.account{
+    text-decoration: none;
+    position: relative;
+    left: 95px;
+    bottom: -30px;
+    color: var(--black);
+     
 }
