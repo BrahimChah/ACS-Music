@@ -1,4 +1,15 @@
 @import "_variables.scss";
+@keyframes balance{
+    0% {
+        transform: rotate(8deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(8deg);
+    }
+}
 
 //Configurations générales :
 body { //Pas de marges, taille de police qui définie 1em, police par défaut.
@@ -19,6 +30,9 @@ body { //Pas de marges, taille de police qui définie 1em, police par défaut.
 #logo {
     width: 33%;
     padding: 5% 0 0 5%;
+    &:hover {
+        animation: balance 1s infinite;
+    }
 }
 
 //Configuration du slogan :
