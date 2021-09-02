@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.domesong1, .domesong2 {
+  position: absolute;
+}
+
+.domesong1 {
+  clip: rect(0px, 200px, 325px, 0px);
+  z-index: 0;
+  width: 50%;
+}
+
+.domesong2 {
+  clip: rect(230px, 200px, 400px, 0px);
+  z-index: 0;
+  width: 50%;
+  -webkit-transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+          transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+}
+
+.album-section1 h2 {
+  margin-top: 0;
+  padding-top: 18%;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+.subtitle {
+  text-align: left;
+  margin-top: 2%;
+}
+
+.cadre1 {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.album-section1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF0B), to(#F27C19));
+  background: linear-gradient(#F8CF0B, #F27C19);
+}
+
+.pochette-album {
+  width: 100%;
+  margin-bottom: 10%;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.album-section2 {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.album-section2 ul {
+  padding: 12%;
+}
+
+.album-section2 ul li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 4% 0;
+}
+
+.album-section2 ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  padding: 2% 0;
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style-album.css.map */

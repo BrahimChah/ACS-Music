@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  color: var(--gray);
+  padding-top: 8%;
+}
+
+.search {
+  border-style: thin;
+  border-width: 1px;
+  border-color: #707070;
+  border-radius: 7.5px;
+  width: 100%;
+  padding: 3% 3%;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 10%;
+  gap: 20px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.slide div {
+  margin-top: 10%;
+}
+
+.img-slide {
+  width: 170px;
+}
+
+.song-section2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF0B), to(#F27C19));
+  background: linear-gradient(#F8CF0B, #F27C19);
+}
+
+.song-section2 p {
+  color: #000000;
+  padding-top: 15%;
+  font-size: 1em;
+  position: relative;
+  z-index: 1;
+}
+
+.domesong1, .domesong2 {
+  position: absolute;
+}
+
+.domesong1 {
+  clip: rect(0px, 200px, 325px, 0px);
+  z-index: 0;
+  width: 50%;
+}
+
+.domesong2 {
+  clip: rect(175px, 200px, 325px, 0px);
+  z-index: 0;
+  width: 50%;
+  -webkit-transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+          transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+}
+
+.album-table {
+  padding-bottom: 30%;
+}
+
+.album-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 18px;
+}
+
+.img-table {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  padding: 2% 0;
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style-songs.css.map */

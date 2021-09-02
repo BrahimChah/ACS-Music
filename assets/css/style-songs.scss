@@ -1,0 +1,106 @@
+@import "_variables.scss";
+
+//Configurations générales :
+body { //Pas de marges, taille de police qui définie 1em, police par défaut.
+    margin : 0;
+    font-size : 16px;
+    font-family: 'Assistant', sans-serif;
+}
+.container { // Container et texte centré au besoin.
+    width: 80%;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+
+//Partie titre et zone de recherche :
+h2 { //Titre du premier cadre.
+    color: var(--gray);
+    padding-top: 8%;
+}
+.search { //Input de recherche.
+    border-style: thin;
+    border-width: 1px;
+    border-color: $gray;
+    border-radius: 7.5px;
+    width: 100%;
+    padding: 3% 3%;
+}
+
+//Partie du slide :
+.slide { //
+    display: flex;
+    padding-left: 10%;
+    gap : 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.slide div { //Elements du slide.
+    margin-top: 10%;
+}
+.img-slide { //Images dans les éléments du slide.
+    width: 170px;
+    // clip-path: ellipse(closest-side 50% at center center); //Permet de rendre les images rondes.
+}
+
+//Section 2 :
+.song-section2 { //Fond jaune doré.
+    // background-color: var(--gold);
+    background: linear-gradient($gold, $orange);
+}
+.song-section2 p { //Titre du cadre en noir, 16px et aéré.
+    color: $black;
+    padding-top: 15%;
+    font-size: 1em;
+    position: relative;
+    z-index: 1; //Le texte doit être devant les images de décorations.
+}
+
+// Images de décoration : 
+.domesong1, .domesong2 {
+    position: absolute;
+}
+.domesong1 {
+    clip: rect(0px, 200px, 325px, 0px); //L'image est rognée.
+    z-index: 0; //Elle est en arrière plan pour donner un style au background.
+    width: 50%;
+}
+.domesong2 { //La deuxième image n'est pas positionée au même endroit.
+    clip: rect(175px, 200px, 325px, 0px);
+    z-index: 0;
+    width: 50%;
+    transform: rotateY(180deg) translateX(-100%) rotateX(-180deg); 
+}
+
+//Partie du tableau d'album :
+.album-table { //La table contenant les albums avec une marge en bas.
+    padding-bottom: 30%;
+}
+.album-row { //Une ligne de la table qui comporte 4 albums.
+    display: flex;
+    justify-content: center;
+    gap: 18px
+}
+.img-table { //Image des album de la table.
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+// Partie footer :
+footer {
+    background-color: $black;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    padding: 2% 0;
+    position: relative;
+    z-index: 1; //Est devant les images de décorations.
+}
+footer a { //Lien du footer.
+    text-decoration: none;
+    color: $white;
+}
+
