@@ -31,10 +31,20 @@ form{
     width:90%;
     z-index: 3;
     position: relative;
-    padding: 150px 0 50px 0;
+    padding: 70px 0 220px 0;
     margin-top: 150px;
     margin-left: 18px;
     box-shadow: 0 0 20px var(--yellow);
+}
+.errormail{
+    display: none;
+    font-size: 0.8em;
+    color: red;  
+}
+.errormp{
+    display: none;
+    font-size: 0.8em;
+    color: red;     
 }
 .geotop{
     position: absolute;
@@ -62,12 +72,12 @@ form input{
     border-color: grey;
     border-style: solid;
 }
-#email{
-    margin-bottom: 70px;
-}
-#password{
-    margin-bottom: 70px;
-}
+// #email{
+//     margin-bottom: 40px;
+// }
+// #password{
+//     margin-bottom: 40px;
+// }
 .btn{
     text-decoration: none;
     background-color: var(--black);
@@ -78,6 +88,8 @@ form input{
     margin-left: 80px;
     margin-top: 20px;
     transition: box-shadow 500ms;
+    position: relative;
+    bottom: -100px;
 }
 .btn:hover{
     transition: box-shadow 500ms;
@@ -89,14 +101,14 @@ form input{
     color: black;
     font-weight: lighter;
     position: absolute;
-    bottom: 26%;
+    bottom: 44%;
     left: 15%;
     
 }
 .account{
     text-decoration: none;
     position: relative;
-    left: 95px;
-    bottom: -15px;
+    left: 110px;
+    bottom: -130px;
     color: var(--black);
 }

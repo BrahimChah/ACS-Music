@@ -82,4 +82,16 @@ form input {
   left: 95px;
   bottom: -30px;
   color: var(--black);
+}
+
+.consigne {
+  display: none;
+  font-size: 0.8em;
+  color: red;
+}
+
+.errormail {
+  display: none;
+  font-size: 0.8em;
+  color: red;
 }/*# sourceMappingURL=inscription.css.map */

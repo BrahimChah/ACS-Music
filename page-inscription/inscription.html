@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./asset-inscription/inscription.css">
-    <!-- <script src="./asset-inscription/"></script> -->
+    <script src="./asset-inscription/inscription.js"></script>
 </head>
 <body>
     <img src="asset-inscription/images-inscription/10.png" class="signup" alt="Black cercle & sign in">
@@ -18,9 +18,11 @@
         <input type="text" id="name"> <!--penser au minlengt et maxlenght apres le JS-->
 
         <p>Email address</p>
+        <p  class="errormail">Votre mot de passe est invalide</p>
         <input type="email" id="email">
         
         <p>Password</p>
+        <p class="consigne">Choisissez un mot de passe d’au moins 12 caractères de types différents (majuscules, minuscules, chiffres, caractères spéciaux).</p>
         <input type="password" id="password">
 
         <!--le bouton "Done"-->
