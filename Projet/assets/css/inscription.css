@@ -1,0 +1,94 @@
+/*Feuille de style Sass Mobile first - page d'inscription ACS Music*/
+/*Les couleurs variables*/
+:root {
+  --black:#000000;
+  --white:#ffffff;
+  --yellow:#ffda09;
+  --blue: #6558f5;
+  --gray: #81919d;
+}
+
+body {
+  font-family: "Assistant", sans-serif;
+  font-family: "Vibes", cursive;
+  font-size: 16px;
+  margin-top: 10%;
+  font-weight: bolder;
+  background-image: url("../imgs/Bg_SignUp.png");
+}
+
+/*Le titre*/
+img.BgSignUp {
+  position: relative;
+  z-index: 4;
+  display: block;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  background-color: var(--white);
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+  padding-top: 100px;
+  margin-top: -120px;
+  padding-bottom: 100px;
+  z-index: 3;
+  box-shadow: var(--yellow) 1px 1px 15px;
+}
+.container .input {
+  width: 80%;
+  border-color: var(--black);
+  border-width: 1px;
+  border-style: solid;
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.container label {
+  font-family: "Assistant", sans-serif;
+  margin-left: 20px;
+  font-size: 20px;
+}
+.container .error {
+  display: none;
+  font-size: 15px;
+  color: red;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+  margin-top: -20px;
+}
+.container .success {
+  display: none;
+  font-size: 15px;
+  color: green;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+  margin-top: -20px;
+}
+.container .btn {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: var(--black);
+  border-style: none;
+  border-radius: 28px;
+  padding: 5% 25%;
+  color: var(--white);
+  font-size: 25px;
+  box-shadow: var(--yellow) 1px 1px 15px;
+}
+.container a {
+  display: block;
+  color: var(--black);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Assistant", sans-serif;
+  text-align: center;
+}/*# sourceMappingURL=inscription.css.map */

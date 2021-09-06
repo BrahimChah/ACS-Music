@@ -14,7 +14,7 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 .container {
@@ -50,5 +50,4 @@ a {
 p {
   margin-bottom: 0;
   margin-left: 6%;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

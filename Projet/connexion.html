@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'inscription</title>
-    <link rel="stylesheet" href="assets/css/inscription.css">
-    <script src="assets/js/inscription.js"></script>
+    <title>Page de connexion</title>
+    <link rel="stylesheet" href="assets/css/connexion.css">
+    <script src="assets/js/connexion.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,26 @@
 
 </head>
 <body>
-    <img class="BgSignUp" src="./assets/imgs/SignUp.png" alt="Sign Up">
+    <img class="BgSignUp" src="./assets/imgs/SignIn.png" alt="Sign Up">.
+    <img class="trait1" src="./assets/imgs/abstract_transparent.png" alt="trait transparent">
+    <img class="trait2" src="./assets/imgs/abstract_transparent2.png" alt="trait transparent">
     <form class="container"> <!--Le container du formulaire-->
         <div>
-            <label for="name">Name</label>
-            <input class="input" type="text" id="name">
-            <p class="error" id="nameerror">Votre pseudonyme doit contenir au minimum 5 caractères !</p>
-            <p class="success" id="namesuccess">C'est parfait !</p>
-        </div>
-        <div>
-            <label for="mail">Email address</label>
-            <input class="input" type="email" id="mail">
+            <label for="mail">Email</label>
+            <input class="input2" type="email" id="mail">
             <p class="error" id="mailerror">Votre adresse email est invalide !</p>
-            <p class="success" id="mailsuccess">C'est parfait !</p>
+            <p class="successtwo" id="mailsuccess">C'est parfait !</p>
         </div>
         <div>
             <label for="pwd">Password</label>
             <input class="input" type="password" id="pwd">
+            <a class="forget" href="#">Forget my password</a>
             <p class="error" id = "pwdError">Le mot de passe doit contenir 6 caractères minimum !</p>
             <p class="success" id="pwdSuccess">C'est parfait !</p>
         </div>
         <div class="text-center">
             <input class="btn" type="submit" value="Done"> <!--Bouton d'envoi du formulaire-->
-            <a href="./connexion.html">Already an account ?</a>
+            <a class="create" href="./inscription.html">Create an account</a>
         </div>
     </form>
 </body>
