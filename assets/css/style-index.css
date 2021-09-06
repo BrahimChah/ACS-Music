@@ -34,6 +34,7 @@ body {
   font-size: 16px;
   font-family: 'Assistant', sans-serif;
   background: url("../images/backindex.jpg") center no-repeat fixed;
+  background-size : cover;
 }
 
 .container {
