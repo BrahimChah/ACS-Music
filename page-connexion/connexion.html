@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Connexion de l'ACS-Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./asset-connexion/connexion.css">
+    <script src="./asset-connexion/connexion.js"></script>
+</head>
+<body>
+    <img src="asset-connexion/images-connexion/signin.png" class="signin" alt="Black cercle & sign in">
+    <img src="asset-connexion/images-connexion/geotop.png" class="geotop" alt="form geo in background">
+    <img src="asset-connexion/images-connexion/geobot.png" class="geobot" alt="form geo in background">
+    <form>
+        <!--Champs pour l'adresse mail-->
+        <p>Email</p>
+        <p class="errormail">Your email address is not allowed</p> <!--message d'erreur-->
+        <input type="email" id="email" pattern=".+@globex\.com" size="" required>
+        
+
+        <!-- Champs pour le mot de passe-->
+        <p>Password</p>
+        <p class="errormp">Your password is incorrect</p> <!--message d'erreur-->
+        <input type="password" id="password" minlength="" required>
+        
+        <div>
+            <a href="#" class="forget">Forget my password</a>
+        </div>
+
+        <!--le bouton "Done"-->
+        <div>
+            <a href="#" class="btn">Done</a>
+        </div>
+
+        <!--le lien pour créer un compte-->
+        <div>   
+            <a href="#" class="account">Create an account</a>
+        </div> 
+
+    </form>
+</body>
+</html>
