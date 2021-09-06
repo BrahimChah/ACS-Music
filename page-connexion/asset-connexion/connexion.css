@@ -88,7 +88,7 @@ form input {
   border-radius: 50px;
   color: var(--white);
   font-size: 1.5em;
-  margin-left: 80px;
+  margin-left: 90px;
   margin-top: 20px;
   transition: box-shadow 500ms;
   position: relative;
@@ -112,7 +112,7 @@ form input {
 .account {
   text-decoration: none;
   position: relative;
-  left: 110px;
+  left: 97px;
   bottom: -130px;
   color: var(--black);
 }/*# sourceMappingURL=connexion.css.map */
