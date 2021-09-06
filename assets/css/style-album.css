@@ -1,5 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+@-webkit-keyframes disque {
+  form {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes disque {
+  form {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 body {
   margin: 0;
   font-size: 16px;
@@ -20,17 +41,14 @@ body {
 }
 
 .domesong1 {
-  clip: rect(0px, 200px, 325px, 0px);
   z-index: 0;
-  width: 50%;
+  width: 100%;
 }
 
 .domesong2 {
-  clip: rect(230px, 200px, 400px, 0px);
   z-index: 0;
-  width: 50%;
-  -webkit-transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
-          transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+  width: 100%;
+  bottom: 35%;
 }
 
 .album-section1 h2 {
@@ -61,14 +79,24 @@ body {
   margin-bottom: 10%;
   position: relative;
   z-index: 1;
-  -webkit-transition: 500ms;
-  transition: 500ms;
+  -webkit-animation: disque 2s infinite linear;
+          animation: disque 2s infinite linear;
+  -webkit-clip-path: ellipse(closest-side 50% at center center);
+          clip-path: ellipse(closest-side 50% at center center);
+}
+
+.pochette-album:hover {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-clip-path: none;
+          clip-path: none;
 }
 
 .album-section2 {
   position: relative;
   z-index: 1;
   background-color: #ffffff;
+  margin-top: -5%;
 }
 
 .album-section2 ul {

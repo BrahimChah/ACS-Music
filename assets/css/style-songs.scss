@@ -34,7 +34,6 @@ h2 { //Titre du premier cadre.
     padding-left: 10%;
     gap : 20px;
     overflow-x: scroll;
-    scrollbar-width: none;
 }
 .slide div { //Elements du slide.
     margin-top: 10%;
@@ -62,15 +61,14 @@ h2 { //Titre du premier cadre.
     position: absolute;
 }
 .domesong1 {
-    clip: rect(0px, 200px, 325px, 0px); //L'image est rognée.
     z-index: 0; //Elle est en arrière plan pour donner un style au background.
     width: 50%;
 }
 .domesong2 { //La deuxième image n'est pas positionée au même endroit.
-    clip: rect(175px, 200px, 325px, 0px);
     z-index: 0;
     width: 50%;
-    transform: rotateY(180deg) translateX(-100%) rotateX(-180deg); 
+    right: 0;
+    bottom: -20%;
 }
 
 //Partie du tableau d'album :

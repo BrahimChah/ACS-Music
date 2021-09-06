@@ -1,13 +1,13 @@
 @import "_variables.scss";
 // Définition de l'animation de disque qui tourne : désactivée
-// @keyframes disque {
-//     form {
-//         transform: rotate(0deg);
-//     }
-//     to {
-//         transform: rotate(360deg);
-//     }
-// }
+@keyframes disque {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 // Configuration générale de la page : 
 body {
@@ -29,15 +29,13 @@ body {
     
 }
 .domesong1 {
-    clip: rect(0px, 200px, 325px, 0px);
     z-index: 0;
-    width: 50%;
+    width: 100%;
 }
 .domesong2 {
-    clip: rect(230px, 200px, 400px, 0px);
     z-index: 0;
-    width: 50%;
-    transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+    width: 100%;
+    bottom: 35%;
 }
 .album-section1 h2 { //Titre de la page album.
     margin-top: 0;
@@ -63,20 +61,19 @@ body {
     margin-bottom: 10%;
     position: relative;
     z-index: 1;
-    transition: 500ms;
-    // animation: disque 500ms linear;//Animation désactivé
-    // clip-path:none;
-    // &:hover {
-        // animation: none;
-        // transition: 500ms;
-        // clip-path: ellipse(closest-side 50% at center center);
-    // }
+    animation: disque 2s infinite linear;//Animation désactivé
+    clip-path: ellipse(closest-side 50% at center center);
+    &:hover {
+        animation: none;
+        clip-path:none;
+    }
 }
 //Section 2 :
 .album-section2 {
     position: relative;
     z-index: 1;
     background-color: $white;
+    margin-top: -5%;
 }
 .album-section2 ul { //Liste de titres
     padding: 12%;

@@ -36,7 +36,6 @@ h2 {
   padding-left: 10%;
   gap: 20px;
   overflow-x: scroll;
-  scrollbar-width: none;
 }
 
 .slide div {
@@ -65,17 +64,15 @@ h2 {
 }
 
 .domesong1 {
-  clip: rect(0px, 200px, 325px, 0px);
   z-index: 0;
   width: 50%;
 }
 
 .domesong2 {
-  clip: rect(175px, 200px, 325px, 0px);
   z-index: 0;
   width: 50%;
-  -webkit-transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
-          transform: rotateY(180deg) translateX(-100%) rotateX(-180deg);
+  right: 0;
+  bottom: -20%;
 }
 
 .album-table {
