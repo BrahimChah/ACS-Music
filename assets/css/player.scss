@@ -1,0 +1,71 @@
+:root{
+    --black:#000000;
+    --white:#ffffff;
+    --yellow:#ffda09;
+    --blue: #6558f5;
+    --gray: #81919d;
+}
+
+body{
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Vibes', cursive;
+}
+
+.eminemhead{
+    width: 100%;
+}
+
+.titles{
+    h1{
+        font-family: 'Assistant', sans-serif;
+        display: block;
+        text-align: center;
+    }
+
+    h2{
+        font-family: 'Assistant', sans-serif;
+        display: block;
+        text-align: center;
+    }
+
+    img{
+        display: block;
+        margin: auto;
+    }
+
+    img.playerbar{
+        padding-top: 5%;
+        width: 80%;
+    }
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 20%;
+    align-items: center;
+        .btn{     
+            width: 60px;
+            height: 60px;
+        }
+        .btn2{
+            width: 40px;
+            height: 40px;
+        }
+        .btnplayer{
+            width: 150px;
+            height: 150px;
+        }
+}
+
+footer{
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 30px;
+        img{
+            width: 50px;
+        }
+}

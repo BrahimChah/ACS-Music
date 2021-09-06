@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+@-webkit-keyframes balance {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+@keyframes balance {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Assistant', sans-serif;
+  background: url("../images/backindex.jpg") center no-repeat fixed;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#logo {
+  width: 33%;
+  padding: 5% 0 0 5%;
+}
+
+#logo:hover {
+  -webkit-animation: balance 1s infinite;
+          animation: balance 1s infinite;
+}
+
+text {
+  -webkit-transform: rotate(-18deg);
+          transform: rotate(-18deg);
+}
+
+svg {
+  -webkit-transform: translateY(-6%);
+          transform: translateY(-6%);
+}
+
+#slogan {
+  font-family: 'Vibes', cursive;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+.btn-index {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  font-size: 2em;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 1.5% 15%;
+  opacity: 0.8;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.btn-index:hover {
+  -webkit-box-shadow: 0px 0px 10px #ffffff;
+          box-shadow: 0px 0px 10px #ffffff;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.index-link {
+  display: block;
+  text-decoration: none;
+  color: #F8CF0B;
+  font-size: 1.2em;
+  padding-top: 4%;
+}
+/*# sourceMappingURL=style-index.css.map */

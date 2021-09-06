@@ -1,0 +1,103 @@
+@import "_variables.scss";
+// Définition de l'animation de disque qui tourne : désactivée
+@keyframes disque {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+// Configuration générale de la page : 
+body {
+    margin : 0;
+    font-size : 16px;
+    font-family: 'Assistant', sans-serif;
+}
+.container { //Container et centrage de texte au besoin.
+    width: 80%;
+    margin: auto;
+}
+.text-center {
+    text-align: center;
+}
+
+//Cadre 1 :
+.domesong1, .domesong2 { //Images de décoration.
+    position: absolute;
+    
+}
+.domesong1 {
+    z-index: 0;
+    width: 100%;
+}
+.domesong2 {
+    z-index: 0;
+    width: 100%;
+    bottom: 35%;
+}
+.album-section1 h2 { //Titre de la page album.
+    margin-top: 0;
+    padding-top: 18%;
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.8em;
+}
+.subtitle { //Sous titre juste en dessous du h2
+    text-align: left;
+    margin-top: 2%;
+}
+.cadre1 { //On aère le cadre 1
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.album-section1 { //Fond jaune doré.
+    // background-color: $gold);
+    background: linear-gradient($gold, $orange);
+}
+.pochette-album { //Image de la pochette de l'album
+    width: 100%;
+    margin-bottom: 10%;
+    position: relative;
+    z-index: 1;
+    animation: disque 2s infinite linear;//Animation désactivé
+    clip-path: ellipse(closest-side 50% at center center);
+    &:hover {
+        animation: none;
+        clip-path:none;
+    }
+}
+//Section 2 :
+.album-section2 {
+    position: relative;
+    z-index: 1;
+    background-color: $white;
+    margin-top: -5%;
+}
+.album-section2 ul { //Liste de titres
+    padding: 12%;
+}
+.album-section2 ul li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 4% 0;
+}
+.album-section2 ul li a{
+    text-decoration: none;
+    color: $black;
+}
+// Footer :
+footer {
+    background-color: $black;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    padding: 2% 0;
+    position: relative;
+    z-index: 1;
+}
+footer a {
+    text-decoration: none;
+    color: $white;
+}
