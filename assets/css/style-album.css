@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+@-webkit-keyframes disque {
+  form {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes disque {
+  form {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.domesong1, .domesong2 {
+  position: absolute;
+}
+
+.domesong1 {
+  z-index: 0;
+  width: 100%;
+}
+
+.domesong2 {
+  z-index: 0;
+  width: 100%;
+  bottom: 35%;
+}
+
+.album-section1 h2 {
+  margin-top: 0;
+  padding-top: 18%;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.8em;
+}
+
+.subtitle {
+  text-align: left;
+  margin-top: 2%;
+}
+
+.cadre1 {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.album-section1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF0B), to(#F27C19));
+  background: linear-gradient(#F8CF0B, #F27C19);
+}
+
+.pochette-album {
+  width: 100%;
+  margin-bottom: 10%;
+  position: relative;
+  z-index: 1;
+  -webkit-animation: disque 2s infinite linear;
+          animation: disque 2s infinite linear;
+  -webkit-clip-path: ellipse(closest-side 50% at center center);
+          clip-path: ellipse(closest-side 50% at center center);
+}
+
+.pochette-album:hover {
+  -webkit-animation: none;
+          animation: none;
+  -webkit-clip-path: none;
+          clip-path: none;
+}
+
+.album-section2 {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+  margin-top: -5%;
+}
+
+.album-section2 ul {
+  padding: 12%;
+}
+
+.album-section2 ul li {
+  list-style: none;
+  font-size: 1.5em;
+  padding: 4% 0;
+}
+
+.album-section2 ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 2em;
+  padding: 2% 0;
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style-album.css.map */
