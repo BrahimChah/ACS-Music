@@ -17,6 +17,7 @@ body { //Pas de marges, taille de police qui définie 1em, police par défaut.
     font-size: 16px;
     font-family: 'Assistant', sans-serif;
     background: url("../images/backindex.jpg") center no-repeat fixed; 
+    background-size :cover;
 }
 .container { // Container et texte centré au besoin.
     width: 80%;
