@@ -1,100 +1,98 @@
-/*Feuille de style Sass Mobile first - page d'inscription ACS Music*/
-/*Les couleurs variables*/
+/*feuille de style SASS p.3 Insricption ACS Music*/
+//variables de couleur (format CSS):
 :root{
-    --black:#000000;
-    --white:#ffffff;
-    --yellow:#ffda09;
-    --blue: #6558f5;
-    --gray: #81919d;
+    --yellow: #FFDD00;
+    --white: #ffffff;
+    --black: #000000;
+    --yellow-light: #F8CF0B;
+    --yellow-dark: #F27C19;
 }
 
 body{
     font-family: 'Assistant', sans-serif;
-    font-family: 'Vibes', cursive;
-    font-size: 16px;
-    margin-top: 10%;
-    font-weight: bolder;
-    background-image: url('../imgs/Bg_SignUp.png')
+    background-image: url("../images/mur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;   
 }
-
-/*Le titre*/
-img.BgSignUp{
-    position: relative;
+//image du sign up en rond 
+.signup{
+    border-radius: 100%;
+    width: 50%;
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 4;
-    display: block;
-    margin: auto;
-    padding-bottom: 30px;
+    margin-top: 25px;
 }
-
-.container{
-    width: 80%;
-    margin: auto;
+// container du formulaire blanc 
+form{
     background-color: var(--white);
-    padding-left: 5%;
-    padding-right: 5%;
-    position: relative;
-    padding-top: 100px;
-    margin-top: -120px;
-    padding-bottom: 100px;
+    width:90%;
     z-index: 3;
-    box-shadow: var(--yellow) 1px 1px 15px;
-
-
-.input{
-    width: 80%;
-    border-color: var(--black);
-    border-width: 1px;
-    border-style: solid;
-    display: block;
-    margin: auto;
-    margin-bottom: 30px;
-    padding: 10px;
-    border-radius: 15px;
+    position: relative;
+    padding: 150px 0 120px 0;
+    margin-top: 112px;
+    margin-left: 18px;
+    box-shadow: 0 0 20px var(--yellow);
 }
+    form p{
+        margin-left: 50px;
+        margin-bottom: 0;
+        font-size: 1.3em;
+    }
+    form input{
+        padding: 10px 50px;
+        border-radius: 15px;
+        display: block;
+        margin: auto;
+        border-width: 1px;
+        border-color: grey;
+        border-style: solid;
+    }
+    #password {
+        margin-bottom: 55px;
+    }
+    //bouton "done"
+    .btn{
+        text-decoration: none;
+        background-color: var(--black);
+        padding: 7px 50px;
+        border-radius: 50px;
+        color: var(--white);
+        font-size: 1.3em;
+        margin-left: 87px;
+        margin-top: 20px;
+        transition: box-shadow 500ms;
+    }
+    //animation, néon du bouton "done"
+    .btn:hover{
+        transition: box-shadow 500ms;
+        box-shadow: 0 0 20px var(--yellow-light);
+    }
+    // lien already have an account
+    .account{
+        text-decoration: none;
+        position: relative;
+        left: 95px;
+        bottom: -30px;
+        color: var(--black);
+        
+    }
 
-
-label{
-    font-family: 'Assistant', sans-serif;
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-.error{
-    display: none;
-    font-size: 15px;
-    color: red;
-    font-family: 'Assistant', sans-serif;
-    text-align: center;
-}
-
-.success{
-    display: none;
-    font-size: 15px;
-    color: green;
-    font-family: 'Assistant', sans-serif;
-    text-align: center;
-}
-
-.btn{
-    display: block;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    background-color: var(--black);
-    border-style: none;
-    border-radius: 28px;
-    padding: 5% 25%;
-    color: var(--white);
-    font-size: 25px;
-    box-shadow: var(--yellow) 1px 1px 15px;
-}
-
-a{
-    display: block;
-    color: var(--black);
-    text-decoration: none;
-    font-size: 18px;
-    font-family: 'Assistant', sans-serif;
-    text-align: center;
-}
-}
+    //les messages d'erreurs
+    .consigne{
+        display: none;
+        font-size: 0.8em;
+        color: red;
+        
+    }
+    .errormail{
+        display: none;
+        font-size: 0.8em;
+        color: red;
+    
+    }

@@ -1,13 +1,16 @@
+/*feuille de style SASS p.5 Album ACS-Music*/
+//importation des variables de couleur: 
 @import "_variables.scss";
+
 // Définition de l'animation de disque qui tourne : désactivée
-@keyframes disque {
-    form {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
+// @keyframes disque {
+//     form {
+//         transform: rotate(0deg);
+//     }
+//     to {
+//         transform: rotate(360deg);
+//     }
+// }
 
 // Configuration générale de la page : 
 body {
@@ -61,12 +64,12 @@ body {
     margin-bottom: 10%;
     position: relative;
     z-index: 1;
-    animation: disque 2s infinite linear;//Animation désactivé
-    clip-path: ellipse(closest-side 50% at center center);
-    &:hover {
-        animation: none;
-        clip-path:none;
-    }
+    // animation: disque 2s infinite linear;//Animation désactivé
+    // clip-path: ellipse(closest-side 50% at center center);
+    // &:hover {
+    //     animation: none;
+    //     clip-path:none;
+    // }
 }
 //Section 2 :
 .album-section2 {
@@ -74,6 +77,8 @@ body {
     z-index: 1;
     background-color: $white;
     margin-top: -5%;
+    height: 344px;
+    overflow: scroll;
 }
 .album-section2 ul { //Liste de titres
     padding: 12%;

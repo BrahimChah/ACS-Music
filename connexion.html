@@ -5,42 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion-ACS-Music</title>
-
+    <!--lien pour la police "Assistant"-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel = "stylesheet" href ="assets-connexion/connexion.css">
-    <script src = assets-connexion/connexion.js></script>
+    <link rel = "stylesheet" href ="assets/css/connexion.css">
+    <script src = "assets/js/connexion.js"></script>
 </head>
 
 
 <body>
-    <img class = "signin" src ="assets-connexion/img/signin.png">
+<!--le rond sign in-->
+    <img class = "signin" src ="assets/images/signin.png">
 
-    <img class = "top" src ="assets-connexion/img/geotop.png">
+<!-- la forme géometrique du haut-->
+    <img class = "top" src ="assets/images/geotop.png">
+<!--la forme géometrique du bas-->
+    <img class = "bottom" src ="assets/images/geobot.png">
 
-    <img class = "bottom" src ="assets-connexion/img/geobot.png">
-
+<!--le formulaire-->
     <form>
         <div class="formulaire">
             <p>Email</p>
-            <input type = email id="email">
+            <input type = "email" id="email">
 
             <p>Password</p>
-            <input type = password id="password">
+            <input type = "password" id="password">
         </div>
-
+    <!--la phrase d'erreur-->
         <div>
-            <a href = "#" id ="oubli">Forget my password</a>
+            <a href = "#" id ="oubli">Forget my password</a> <!--mettre le lien vers une page de renvoit de mot de passe-->
             <p id= "passworderror" class= "error">Your email and/or your password are wrong</p>
         </div>
-
+    <!--bouton "Done"-->
         <a href = "#" class="btn">Done</a>
         
+    <!-- le lien click pour l'inscription-->
         <div>
-            <a href = "#" id="lien">Create an account</a>
+            <a href = "inscription.html" id="lien">Create an account</a>
         </div>
     </form>
+    
 </body>
 </html>

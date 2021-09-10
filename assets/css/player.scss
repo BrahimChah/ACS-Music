@@ -12,26 +12,40 @@ body{
     font-family: 'Vibes', cursive;
 }
 
-.eminemhead{
-    width: 100%;
+header{
+    background: linear-gradient(#F27C19, #F8CF0B);
+    text-align: center;
+}
+.imghead{
+    width: 57%;
+    margin-bottom: 4%;
+    margin-top: 4%;
 }
 
 .titles{
-    h1{
+    h1{ //nom de l'album
         font-family: 'Assistant', sans-serif;
         display: block;
         text-align: center;
+        font-size: 1.6em;
     }
 
-    h2{
+    h2{ //nom de l'artiste
         font-family: 'Assistant', sans-serif;
         display: block;
         text-align: center;
+        font-size: 1.2em;
     }
 
+    
     img{
         display: block;
         margin: auto;
+        width: 37%;
+    }
+
+    .soundwave{
+        height: 45px;
     }
 
     img.playerbar{
@@ -43,29 +57,47 @@ body{
 .buttons{
     display: flex;
     justify-content: center;
-    padding: 20%;
+    padding: 6% 0;
     align-items: center;
         .btn{     
-            width: 60px;
-            height: 60px;
-        }
-        .btn2{
             width: 40px;
             height: 40px;
         }
-        .btnplayer{
-            width: 150px;
-            height: 150px;
+        .btn2{
+            width: 30px;
+            height: 30px;
         }
+        .btn-player{
+            width: 100px;
+            height: 100px;
+        }
+        
 }
 
-footer{
-    background-color: var(--black);
+// Partie footer :
+footer {
+    background-color: black;
     display: flex;
-    justify-content: center;
-    padding: 10px;
-    gap: 30px;
-        img{
-            width: 50px;
-        }
+    justify-content: space-evenly;
+    font-size: 2em;
+    padding: 2% 0;
+    position: relative;
+    z-index: 1; //Est devant les images de décorations.
+    
+}
+footer a { //Lien du footer.
+    text-decoration: none;
+    color: white;
+}
+@media (min-height: 800px){
+    .imghead{
+        width: 100%;
+        margin: 0;
+    }
+    .buttons{
+        padding: 7.9% 0;
+    }
+    header{
+        background: unset;
+    }
 }

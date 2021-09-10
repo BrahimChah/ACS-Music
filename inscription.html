@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3 Inscription de l'ACS-Music</title>
+<!--lien vers les fonts "Assistant"-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./asset-inscription/inscription.css">
-    <script src="./asset-inscription/inscription.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/inscription.css">
+    <script src="./assets/js/inscription.js"></script>
 </head>
+
 <body>
-    <img src="asset-inscription/images-inscription/10.png" class="signup" alt="Black cercle & sign in">
+    <!--image du cercle sign up-->
+    <img src="assets/images/10.png" class="signup" alt="Black cercle & sign in">
+
     <form>
         <p>Name</p>
-        <input type="text" id="name"> <!--penser au minlengt et maxlenght apres le JS-->
-
+        <input type="text" id="name"> 
+        
         <p>Email address</p>
         <p  class="errormail">Votre adresse email est invalide</p>
         <input type="email" id="email">
@@ -25,16 +30,17 @@
         <p class="consigne">Choisissez un mot de passe d’au moins 12 caractères de types différents (majuscules, minuscules, chiffres, caractères spéciaux).</p>
         <input type="password" id="password">
 
-        <!--le bouton "Done"-->
+    <!--le bouton "Done"-->
         <div>
-            <a href="#" class="btn">Done</a>
+            <a href="connexion.html" class="btn">Done</a>
         </div>
         
-        <!--le lien pour créer un compte-->
+    <!--le lien pour créer un compte-->
         <div>   
-            <a href="#" class="account">Already an account</a>
+            <a href="connexion.html" class="account">Already an account</a>
         </div> 
 
     </form>
+    
 </body>
 </html>

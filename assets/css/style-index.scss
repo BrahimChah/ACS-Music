@@ -1,4 +1,8 @@
+/*feuille de style SASS, index p.1*/
+//importation de la feuille de couleur 
 @import "_variables.scss";
+
+//animation du logo
 @keyframes balance{
     0% {
         transform: rotate(8deg);
@@ -49,6 +53,7 @@ svg {
     font-size: 2em;
 }
 
+
 //Bouton sign up :
 .btn-index {
     text-decoration: none; //Configuration du texte
@@ -76,4 +81,15 @@ svg {
     color: $gold;
     font-size: 1.2em;
     padding-top: 4%;
+}
+//bouton sign in
+#btnaccueil{
+    padding-top: 15%;
+}
+
+//emplacement du bouton sign in pour les écrans de plus de 810px (format Iphone X, XR et plus)
+@media (min-height: 810px) {
+    #btnaccueil{
+        padding-top:30% ;
+    }
 }

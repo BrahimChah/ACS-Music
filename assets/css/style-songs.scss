@@ -1,3 +1,5 @@
+/*feuille de style SASS p.4 accueil, Song ACS-Music */
+//importation des couleurs varibales
 @import "_variables.scss";
 
 //Configurations générales :
@@ -47,11 +49,12 @@ h2 { //Titre du premier cadre.
 .song-section2 { //Fond jaune doré.
     // background-color: var(--gold);
     background: linear-gradient($gold, $orange);
+    background-size: cover;
 }
 .song-section2 p { //Titre du cadre en noir, 16px et aéré.
     color: $black;
     padding-top: 15%;
-    font-size: 1em;
+    font-size: 1.5em;
     position: relative;
     z-index: 1; //Le texte doit être devant les images de décorations.
 }
@@ -68,12 +71,13 @@ h2 { //Titre du premier cadre.
     z-index: 0;
     width: 50%;
     right: 0;
-    bottom: -20%;
+    bottom: 1%;
 }
 
 //Partie du tableau d'album :
 .album-table { //La table contenant les albums avec une marge en bas.
-    padding-bottom: 30%;
+    padding-top: 20%;
+    padding-bottom: 17%;
 }
 .album-row { //Une ligne de la table qui comporte 4 albums.
     display: flex;
@@ -81,8 +85,8 @@ h2 { //Titre du premier cadre.
     gap: 18px
 }
 .img-table { //Image des album de la table.
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     position: relative;
     z-index: 1;
 }

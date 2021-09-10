@@ -1,30 +1,10 @@
+/*feuille de style SASS p.5 Album ACS-Music*/
 @import url("https://fonts.googleapis.com/css2?family=Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
-@-webkit-keyframes disque {
-  form {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes disque {
-  form {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 body {
   margin: 0;
   font-size: 16px;
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
 }
 
 .container {
@@ -70,7 +50,6 @@ body {
 }
 
 .album-section1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF0B), to(#F27C19));
   background: linear-gradient(#F8CF0B, #F27C19);
 }
 
@@ -79,17 +58,6 @@ body {
   margin-bottom: 10%;
   position: relative;
   z-index: 1;
-  -webkit-animation: disque 2s infinite linear;
-          animation: disque 2s infinite linear;
-  -webkit-clip-path: ellipse(closest-side 50% at center center);
-          clip-path: ellipse(closest-side 50% at center center);
-}
-
-.pochette-album:hover {
-  -webkit-animation: none;
-          animation: none;
-  -webkit-clip-path: none;
-          clip-path: none;
 }
 
 .album-section2 {
@@ -97,6 +65,8 @@ body {
   z-index: 1;
   background-color: #ffffff;
   margin-top: -5%;
+  height: 344px;
+  overflow: scroll;
 }
 
 .album-section2 ul {
@@ -116,12 +86,8 @@ body {
 
 footer {
   background-color: #000000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   font-size: 2em;
   padding: 2% 0;
   position: relative;
@@ -131,5 +97,4 @@ footer {
 footer a {
   text-decoration: none;
   color: #ffffff;
-}
-/*# sourceMappingURL=style-album.css.map */
+}/*# sourceMappingURL=style-album.css.map */

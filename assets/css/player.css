@@ -8,77 +8,91 @@
 
 body {
   margin: 0;
-  font-family: 'Assistant', sans-serif;
-  font-family: 'Vibes', cursive;
+  font-family: "Assistant", sans-serif;
+  font-family: "Vibes", cursive;
 }
 
-.eminemhead {
-  width: 100%;
+header {
+  background: linear-gradient(#F27C19, #F8CF0B);
+  text-align: center;
+}
+
+.imghead {
+  width: 57%;
+  margin-bottom: 4%;
+  margin-top: 4%;
 }
 
 .titles h1 {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   display: block;
   text-align: center;
+  font-size: 1.6em;
 }
-
 .titles h2 {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   display: block;
   text-align: center;
+  font-size: 1.2em;
 }
-
 .titles img {
   display: block;
   margin: auto;
+  width: 37%;
 }
-
+.titles .soundwave {
+  height: 45px;
+}
 .titles img.playerbar {
   padding-top: 5%;
   width: 80%;
 }
 
 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  padding: 6% 0;
+  align-items: center;
 }
-
 .buttons .btn {
-  width: 60px;
-  height: 60px;
-}
-
-.buttons .btn2 {
   width: 40px;
   height: 40px;
 }
-
-.buttons .btnplayer {
-  width: 150px;
-  height: 150px;
+.buttons .btn2 {
+  width: 30px;
+  height: 30px;
+}
+.buttons .btn-player {
+  width: 100px;
+  height: 100px;
 }
 
 footer {
-  background-color: var(--black);
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: black;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
-  gap: 30px;
+  justify-content: space-evenly;
+  font-size: 2em;
+  padding: 2% 0;
+  position: relative;
+  z-index: 1;
 }
 
-footer img {
-  width: 50px;
+footer a {
+  text-decoration: none;
+  color: white;
 }
-/*# sourceMappingURL=player.css.map */
+
+@media (min-height: 800px) {
+  .imghead {
+    width: 100%;
+    margin: 0;
+  }
+
+  .buttons {
+    padding: 7.9% 0;
+  }
+
+  header {
+    background: unset;
+  }
+}/*# sourceMappingURL=player.css.map */
